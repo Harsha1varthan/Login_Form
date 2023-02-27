@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en"> 
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel = "stylesheet" href = "login.css">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "form">
+                <h1>Login</h1>
+                <form action = "https://httpbin.org/get" method = "get">
+                    <p>
+                        <label for = "email">
+                            Email
+                        </label>
+                        <input type = "email" placeholder="abc@gmail.com" required autofocus  autocomplete = "on"  name = "email" id = "email">
+                    </p>
+                    <p>
+                        <label for = "password">
+                            Password
+                        </label>
+                        <input type = "password" id = "password" name = "password" placeholder = "your secret" required>
+                    </p>
+                    <p class = "forget"><a>Forget Password?</a></p>
+                    <p class = "sign"><a>Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

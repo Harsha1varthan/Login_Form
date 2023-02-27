@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --P_FONT: 1.5rem;
+    --H_FONT: 3rem;
+    --FONT-COLOR: #fff;
+    --LINK-COLOR: rgb(25, 0, 255);
+}
+
+
+.container{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../img/Login.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    align-items: center;
+
+    justify-content: space-evenly;
+}
+:is(p){
+    font-size: var(--P_FONT);
+    color: var(--FONT-COLOR);
+}
+h1{
+    text-align: center;
+    font-size: var(--H_FONT);
+    color: var(--FONT-COLOR);
+    margin-bottom: 1em;
+}
+.form{
+    width: 100%;
+    padding: 4rem;
+    background-color: hsla(52, 13%, 23%, 0.38);
+    line-height: 3rem;
+}
+input{
+    width: 100%;
+    background: transparent;
+    padding: 1em;
+}
+
+a{
+    color: var(--LINK-COLOR);
+    font-size: 1.3rem;
+}
+
+a:hover, a:focus{
+    cursor: pointer;
+    transform: scale(4, 4);
+    color: red;
+}
+
+.forget{
+    margin: 1em 0;
+    text-align: end;
+}
+.sign{
+    display: block;
+    margin: 0 auto;
+    border: 0.5px solid #ffffffc2;
+    padding: 0.2em;
+    text-align: center;  
+}
+:is(.sign:hover, .sign:focus){
+    background-color: #cfc6c6;
+}
+
+@media (max-width: 475px){
+    .container{
+        min-height: 100vh;
+        background-size: 100% 100%;
+    }
+}
